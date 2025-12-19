@@ -1,0 +1,167 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.logo {
+  color: #e50914;
+  height: 2.5rem;
+}
+main {
+  background-image: url(Assets/Images/Background.jpg);
+  height: 110vh;
+  background-size: cover;
+  position: relative;
+  top: -90px;
+  z-index: 1;
+}
+.darkEffect {
+  opacity: 0.7;
+  background-color: black;
+  height: 100%;
+  position: relative;
+  top: 0px;
+  z-index: 2;
+}
+.signIn {
+  background-color: red;
+  color: azure;
+  margin: 0px 0px 0px 10px;
+  padding: 8px;
+  width: 75px;
+  border: none;
+  border-radius: 5px;
+}
+.language {
+  color: azure;
+}
+.language option {
+  color: black;
+}
+.language img {
+  width: 30px;
+}
+.getStarted {
+  border: none;
+  background-color: red;
+  color: azure;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.email {
+  background: black;
+  width: 20rem;
+  padding: 15px 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+}
+.blackBox {
+  z-index: 4;
+  position: relative;
+  top: -130px;
+  width: 100%;
+  height: 100vh;
+  /* border-radius: 250px; */
+  border-top-left-radius: 100% 10%;
+  border-top-right-radius: 100% 10%;
+  border-top: 5px solid red;
+  background-color: black;
+  box-shadow: inset 0px 15px 17px rgb(4, 4, 180);
+}
+.trendingNow {
+  position: relative;
+  width: 92%;
+  top: 5%;
+  left: 5%;
+}
+.trendingNow p {
+  color: azure;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.4rem;
+}
+.trendingNow .cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+.card {
+  height: 10rem;
+  width: 7rem;
+  border-radius: 10px;
+  background-color: beige;
+}
+.Reasons {
+  position: relative;
+  width: 92%;
+  top: 10%;
+  left: 5%;
+}
+.Reasons p{
+   color: azure;
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.4rem;
+}
+.Reasons .reasonBox {
+}
+.Reasons .reasonSuper{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.reasonBox {
+  height: 15rem;
+  width: 25rem;
+  border-radius: 10px;
+  background-color: beige;
+}
+@media (min-width: 780px) {
+  .language {
+    padding: 10px;
+    width: 100px;
+    background: none;
+    color: azure;
+  }
+  nav {
+    display: flex;
+    width: 85vw;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+  }
+  .hero {
+    position: absolute;
+    z-index: 3;
+    top: 60%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+}
+#request {
+  font-size: 1rem;
+  margin: 25px;
+}
+#title {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+#middle {
+  font-size: 1.1rem;
+}
+.heroContent {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
